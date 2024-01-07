@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="Clockify.css">
+    <title>Clockify</title>
+    <link id="favicon" rel="icon" type="image/x-icon" href="faviconIdle2.ico">
+</head>
+<body>
+    <div class="topBar cl-align-center">
+        <div class="topBar__icon">
+            <button class="toggler" id = 'tog'>
+                <span class="toggler__icon">
+
+                </span>
+            </button>
+        </div>
+        <div class="topBar__right cl-align-center">
+            <div class="cl-mr-right">
+                Gopikasri workspace
+            </div>
+            <div class="topBar__right__upgrade cl-mr-right">
+                <a class="Btn cl-mr-right"> Upgrade </a>
+            </div>
+        </div>
+    </div>
+    <aside class="asideLayout">
+
+        <nav class="asideLayout__navbar">
+            <div class="cl-visible">
+               <div class="cl-sidebar-container">
+                    <sidebar-navigation>
+                        <div class="sidebar__content">
+                            <ul class="cl-sidebar-list">
+                                <li class="cl-sidebar-timetracker">
+                                    
+                                    <a class="cl-sidebar-timetracker-link" id = 'side'>
+                                        <div class="cl-sidebar-timetracker-flex">
+                                            <span class="cl-nav-icon-wrapper ">
+                                                <img src="clock.svg">
+                                            </span>
+                                            <span class="cl-nav-link-copy " id = 'timetrack'>
+                                               <span>Time tracker</span>
+                                            </span>
+                                            <span class="cl-nav-icon-onhover ">
+                                                <img src="drag-item.svg">
+                                            </span>
+                                        </div>
+                                    </a> 
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </sidebar-navigation>
+               </div>
+            </div>
+        </nav>
+
+    </aside>
+
+    <main class="layout-main">
+        <div class="cl-page-wrapper">
+            <div class="cl-time-tracker-recorder ">
+                <div class="cl-card cl-border-bottom ">
+                    <div id = 'track' class="cl-time-track-flex cl-align-center">
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src = "Clockify.js"></script>
+</body>
+</html>
